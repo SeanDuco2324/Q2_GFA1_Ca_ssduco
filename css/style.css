@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #2f4e64;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+   background-color: #04c9e7;
+   color:whitesmoke;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.links a{
+    margin-left: 1vw;
+}
+
+@media screen and  (max-width:600px) {
+    nav{
+        position: relative;
+        
+    }
+
+    .pagetitle{
+        background-color: #587f9b;
+        padding: 1vw;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        background-color:#285f86 ;
+    }
+
+    .links a{
+        color: black;
+        padding: 12px 16px;
+        display: block;
+    }
+    .links a:hover{background-color: #132633;}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color: #092941;}
+}
+
+.vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(24, 84, 139);
+    color: rgb(231, 231, 231);
+    text-align: center;
+}
+.icon{
+    background: url(/images/Sprite.png);
+    background-repeat: no-repeat; 
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#youtube{
+    background-position:-439px -221px ;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#twitter{
+    background-position: -66px -72px;
+}
+
+#ig{
+    background-position: -290px -221px;
+}
+ .banner{
+    position: fixed;
+    background-color: #4b90c2;
+    height: 18vh;
+    padding: 1vw;
+    width: 100%;
+    margin-top:28vh;
+    opacity: 90%;
+ }
+ .bannerhead{
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+  font-size: xx-large;
+  text-align: center;
+  margin: 1vh;
+ }
+ .bannertext{
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+    font-size: larger;
+    text-align: center;
+ }
